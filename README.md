@@ -21,6 +21,12 @@ Simple Controls updates itself. Before the first install it keeps a copy of all 
 control profiles ("Before Simple Controls", kept for good), and it never writes your
 profile files: every change goes through the sim, like the sim's own controls page.
 
+## Works great with Simple UI
+
+[Simple UI](https://flightsim.to/addon/116742/simpleui-there-i-fixed-msfs-ui-for-you) rebuilds
+the sim's main menu: an aircraft gallery with every livery, favourites, and weather and
+time in one bar. The two run side by side, made to go together.
+
 ## Something wrong?
 
 1. In the Simple Controls app: **Options > Troubleshooting > Save a report**.
