@@ -1,0 +1,57 @@
+name: Something isn't working
+description: A problem with Simple Controls in the sim or in the app.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! The report file makes most problems quick to find:
+        in the Simple Controls app, **Options > Troubleshooting > Save a report**, then drop the file in the box below.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+      placeholder: |
+        I opened the controls in flight, picked my throttle, changed its Bindings profile to "A320"...
+        Expected: ...
+        What happened: ...
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: The report file
+      description: Drag the file saved with "Save a report" here (it attaches). Screenshots help too.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      options:
+        - In the sim's menus (Options > Controls)
+        - In flight (the toolbar's controls panel)
+        - In the Simple Controls app (install, backups, updates)
+        - Installing or uninstalling
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Simple Controls version (top right of the app) and the sim's (Microsoft Store / Xbox app or Steam).
+      placeholder: Simple Controls 0.1.0, MSFS 2024 1.9.24 (Microsoft Store)
+    validations:
+      required: true
+  - type: input
+    id: devices
+    attributes:
+      label: Your devices
+      description: The controllers involved (stick, throttle, pedals...).
+      placeholder: WINWING Ursa Minor stick, Honeycomb Bravo, ...
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other add-ons
+      description: Other add-ons that change the sim's menus or controls, if any (for example Simple UI).
